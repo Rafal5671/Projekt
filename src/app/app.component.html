@@ -13,6 +13,10 @@
             <input type="text" placeholder="Podaj nazwisko" required>
           </div>
           <div class="input-box">
+            <span class="details">Data urodzenia</span>
+            <input type="date" placeholder="Data urodzenia" required>
+          </div>
+          <div class="input-box">
             <span class="details">Email</span>
             <input type="email" placeholder="Podaj adres email" required>
           </div>
@@ -21,24 +25,42 @@
             <input type="text" placeholder="Podaj numer telefonu" required>
           </div>
           <div class="input-box">
+            <span class="details">Kraj</span>
+            <input type="text" placeholder="Kraj">
+          </div>
+          <div class="input-box">
+            <span class="details">Wojewodztwo</span>
+            <input type="text" list="wojewodztwa" required>
+<datalist id="wojewodztwa">
+    <option value="dolnośląskie">
+    <option value="kujawsko-pomorskie">
+    <option value="lubelskie">
+    <option value="lubuskie">
+    <option value="łódzkie">
+    <option value="małopolskie">
+    <option value="mazowieckie">
+    <option value="opolskie">
+    <option value="podkarpackie">
+    <option value="podlaskie">
+    <option value="pomorskie">
+    <option value="śląskie">
+    <option value="świętokrzyskie">
+    <option value="warmińsko-mazurskie">
+    <option value="wielkopolskie">
+    <option value="Zachodniopomorskie">
+</datalist>
+          </div>
+          <div class="input-box">
+            <span class="details">Kod pocztowy</span>
+            <input type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)">
+          </div>
+          <div class="input-box">
             <span class="details">Ulica</span>
             <input type="text" placeholder="Podaj ulicę" required>
           </div>
           <div class="input-box">
             <span class="details">Numer domu/mieszkania</span>
             <input type="text" placeholder="Numer domu/mieszkania" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Kraj</span>
-            <input type="text" placeholder="Kraj">
-          </div>
-          <div class="input-box">
-            <span class="details">Data urodzenia</span>
-            <input type="date" placeholder="Data urodzenia" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Kod pocztowy</span>
-            <input type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)">
           </div>
         </div> 
         <div class="gender-details">
