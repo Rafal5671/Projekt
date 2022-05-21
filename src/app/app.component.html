@@ -14,7 +14,8 @@
           </div>
           <div class="input-box">
             <span class="details">Data urodzenia</span>
-            <input type="date" placeholder="Data urodzenia" required>
+            <input type="text" placeholder="Data urodzenia (MM/DD/YYYY)"
+                    onfocus="(this.type='date')">
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -30,29 +31,29 @@
           </div>
           <div class="input-box">
             <span class="details">Wojewodztwo</span>
-            <input type="text" list="wojewodztwa" required>
-<datalist id="wojewodztwa">
-    <option value="dolnośląskie">
-    <option value="kujawsko-pomorskie">
-    <option value="lubelskie">
-    <option value="lubuskie">
-    <option value="łódzkie">
-    <option value="małopolskie">
-    <option value="mazowieckie">
-    <option value="opolskie">
-    <option value="podkarpackie">
-    <option value="podlaskie">
-    <option value="pomorskie">
-    <option value="śląskie">
-    <option value="świętokrzyskie">
-    <option value="warmińsko-mazurskie">
-    <option value="wielkopolskie">
-    <option value="Zachodniopomorskie">
-</datalist>
+            <input type="text" list="wojewodztwa" placeholder="Wojewodztwo" required>
+            <datalist id="wojewodztwa">
+            <option value="dolnośląskie">
+            <option value="kujawsko-pomorskie">
+            <option value="lubelskie">
+            <option value="lubuskie">
+            <option value="łódzkie">
+            <option value="małopolskie">
+            <option value="mazowieckie">
+            <option value="opolskie">
+            <option value="podkarpackie">
+            <option value="podlaskie">
+            <option value="pomorskie">
+            <option value="śląskie">
+            <option value="świętokrzyskie">
+            <option value="warmińsko-mazurskie">
+            <option value="wielkopolskie">
+            <option value="Zachodniopomorskie">
+            </datalist>
           </div>
           <div class="input-box">
             <span class="details">Kod pocztowy</span>
-            <input type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)">
+            <input type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)" required>
           </div>
           <div class="input-box">
             <span class="details">Ulica</span>
@@ -62,12 +63,19 @@
             <span class="details">Numer domu/mieszkania</span>
             <input type="text" placeholder="Numer domu/mieszkania" required>
           </div>
+          <div class="input-box">
+            <span class="details">Które zawody wariacie</span>
+            <input type="text" list="zawody" placeholder="Zawody" required>
+            <datalist id="zawody">
+            <option value="biegi">
+            </datalist>
+          </div>
         </div> 
         <div class="gender-details">
           <input type="radio" name="gender" id="dot-1">
           <input type="radio" name="gender" id="dot-2">
           <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Płeć</span>
+          <span class="gender-title">Płec</span>
           <div class="category">
             <label for="dot-1">
             <span class="dot one"></span>
