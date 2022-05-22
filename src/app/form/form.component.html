@@ -2,11 +2,11 @@
     <div class="container">
       <div class="title">Rejestracja</div>
       <div class="content">
-        <form action="#">
+        <form action="#" ngNativeValidate>
           <div class="user-details">
             <div class="input-box">
               <span class="details">Imię</span>
-              <input type="text" placeholder="Podaj imię" required>
+              <input type="text" name="name" na-model="name" placeholder="Podaj imię" required>
             </div>
             <div class="input-box">
               <span class="details">Nazwisko</span>
@@ -23,7 +23,7 @@
             </div>
             <div class="input-box">
               <span class="details">Numer telefonu</span>
-              <input type="text" placeholder="Podaj numer telefonu" required>
+              <input type="tel" placeholder="Podaj numer telefonu"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
             <div class="input-box">
               <span class="details">Kraj</span>
