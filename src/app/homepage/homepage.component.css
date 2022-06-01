@@ -18,3 +18,19 @@
     color: #ffffff;
     font-size: 15vh;
 }
+
+#map {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #108d36, #68bea2);
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
