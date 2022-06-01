@@ -23,8 +23,8 @@
     text-align: center;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, #108d36, #68bea2);
+.info_homepage {
+    background-image: linear-gradient(to bottom right, #71b7e6, #9b59b6);
 }
 
 h1 {
