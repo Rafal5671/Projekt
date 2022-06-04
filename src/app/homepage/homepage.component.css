@@ -1,17 +1,14 @@
 .homepage_image_div {
     position: relative;
 }
-
-.homepage_image {
-    width:100%;
+body{
+    background-image: url("/assets/homepage.jpg");
+    background-position:center;
+    background-attachment: fixed;
 }
-
 .homepage_title {
-    position: absolute;
+    position: relative;
     size: 150%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .container_info {
@@ -32,7 +29,6 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-image: linear-gradient(to bottom right, #71b7e6, #9b59b6);
 }
 
 h1 {
