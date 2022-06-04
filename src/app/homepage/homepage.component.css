@@ -1,14 +1,14 @@
-.homepage_image_div {
-    position: relative;
-}
 body{
     background-image: url("/assets/homepage.jpg");
     background-position:center;
     background-attachment: fixed;
 }
+
 .homepage_title {
-    position: relative;
-    size: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
 }
 
 .container_info {
@@ -33,6 +33,7 @@ body{
 
 h1 {
     text-align: center;
+    padding-top: 7px;
     background: linear-gradient(to left, #71b7e6, #9b59b6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,4 +41,7 @@ h1 {
 
 h3 {
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }

@@ -6,7 +6,7 @@
   font-family: 'Poppins',sans-serif;
 }
 body {
-  min-height: 927px;
+  min-height: 97vh;
   display: flex;
   justify-content: center;
   align-items: center;
