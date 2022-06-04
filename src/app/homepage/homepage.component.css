@@ -1,6 +1,5 @@
 .homepage_image_div {
     position: relative;
-    text-align: center;
 }
 
 .homepage_image {
@@ -9,26 +8,38 @@
 
 .homepage_title {
     position: absolute;
+    size: 150%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title {
-    color: #ffffff;
-    font-size: 15vh;
-}
+.container_info {
+    max-width: 1200px;
+    width: 150%;
+    background-color: #fff;
+    padding: 2px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
 
 #map {
     text-align: center;
 }
 
 .info_homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
     background-image: linear-gradient(to bottom right, #71b7e6, #9b59b6);
 }
 
 h1 {
     text-align: center;
+    background: linear-gradient(to left, #71b7e6, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3 {
