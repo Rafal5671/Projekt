@@ -14,7 +14,7 @@ body{
 .container_info {
     max-width: 1200px;
     width: 150%;
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.89);
     padding: 2px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
