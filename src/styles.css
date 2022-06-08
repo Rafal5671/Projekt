@@ -1,14 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 body{
-  margin-top: 35px;
+  margin-top: 30px;
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   height: 15px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
 }
 ::-webkit-scrollbar-thumb {
   background: #e1e1e1;
@@ -31,31 +27,6 @@ body{
 ::-webkit-scrollbar-track:active {
   background: #333333;
 }
-::-webkit-scrollbar-button:single-button {
-  background-color: #bbbbbb;
-  display: block;
-  border-style: solid;
-  height: 15px;
-  width: 18px;
-}
-/* Up */
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-  border-width: 0 8px 8px 8px;
-  border-color: transparent transparent #555555 transparent;
-}
-
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  border-color: transparent transparent #777777 transparent;
-}
-/* Down */
-::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 8px 8px 0 8px;
-  border-color: #555555 transparent transparent transparent;
-}
-
-::-webkit-scrollbar-button:vertical:single-button:increment:hover {
-  border-color: #777777 transparent transparent transparent;
-}
 .snip1143 {
   top:0;
   font-family: 'Raleway', Arial, sans-serif;
@@ -75,7 +46,7 @@ body{
   overflow: hidden;
 }
 .snip1143 a {
-  color: rgba(71, 56, 56, 0.988);
+  color: rgb(71, 56, 56);
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -105,7 +76,6 @@ body{
   color: rgb(148, 26, 26);
   white-space: nowrap;
 }
-.snip1143 li:hover a,
-.snip1143 .current a {
+.snip1143 li:hover a {
   transform: translateY(-100%);
 }
