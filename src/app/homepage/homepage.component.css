@@ -1,20 +1,22 @@
 body{
-    background-image: url("/assets/homepage.jpg");
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /*background-image: url("/assets/homepage.jpg");*/
     background-position:center;
     background-attachment: fixed;
 }
 
 .homepage_title {
     display: block;
+    padding-top: 65px;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
 }
 
 .container_info {
     max-width: 1200px;
     width: 150%;
-    background-color:rgba(255, 255, 255, 0.89);
+    background-color:rgba(255, 255, 255);
     padding: 2px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -35,9 +37,6 @@ body{
 h1 {
     text-align: center;
     padding-top: 7px;
-    background: linear-gradient(to left, #71b7e6, #9b59b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -45,4 +44,5 @@ h3 {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
+    color:rgb(71, 69, 69);
 }
