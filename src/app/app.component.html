@@ -1,7 +1,7 @@
-<nav class="navigation">
-    <li><a routerLink="/" data-hover="Strona Główna">Strona Główna</a></li>
-    <li><a routerLink="/Harmonogram" data-hover="Harmonogram">Harmonogram</a></li>
-    <li><a routerLink="/form" data-hover="Zarejestruj się">Zarejestruj się</a></li>
+<nav class="navigation" id="Nav">
+    <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" data-hover="Strona Główna">Strona Główna</a></li>
+    <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/Harmonogram" data-hover="Harmonogram">Harmonogram</a></li>
+    <li><a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/form" data-hover="Zarejestruj się">Zarejestruj się</a></li>
 </nav>
 <div>
     <router-outlet></router-outlet>

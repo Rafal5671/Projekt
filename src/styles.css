@@ -73,6 +73,6 @@
   color: #ffffff;
   white-space: nowrap;
 }
-.navigation li:hover a {
+.navigation li:hover a,.active {
   transform: translateY(-100%);
 }
