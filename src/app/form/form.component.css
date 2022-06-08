@@ -13,6 +13,8 @@ body {
   padding-top: 40px;
   padding-bottom: 10px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background-position:center;
+  background-attachment: fixed;
 }
 
 .container {
@@ -29,10 +31,10 @@ body {
 .container .title {
   font-size: 25px;
   font-weight: 500;
-  position: relative;
+  /*position: relative;*/
 }
 
-.container .title::before {
+/*.container .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -41,7 +43,7 @@ body {
   width: 30px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
+}*/
 
 .content form .user-details {
   display: flex;
