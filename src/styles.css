@@ -24,25 +24,25 @@
 ::-webkit-scrollbar-track:active {
   background: #333333;
 }
-.snip1143 {
+.navigation {
   top:0;
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.snip1143 * {
+.navigation * {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1143 li {
+.navigation li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1.5em;
   overflow: hidden;
 }
-.snip1143 a {
+.navigation a {
   color: #000000;
   position: relative;
   display: inline-block;
@@ -50,13 +50,13 @@
   margin: 0;
   text-decoration: none;
 }
-.snip1143 a:before,
-.snip1143 a:after {
+.navigation a:before,
+.navigation a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1143 a:before {
+.navigation a:before {
   top: 100%;
   display: block;
   height: 3px;
@@ -64,7 +64,7 @@
   content: "";
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.snip1143 a:after {
+.navigation a:after {
   padding: 0.3em 0;
   position: absolute;
   top: 100%;
@@ -73,6 +73,6 @@
   color: #ffffff;
   white-space: nowrap;
 }
-.snip1143 li:hover a {
+.navigation li:hover a {
   transform: translateY(-100%);
 }
