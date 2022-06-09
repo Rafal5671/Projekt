@@ -6,12 +6,10 @@
   font-family: 'Poppins',sans-serif;
 }
 body {
-  min-height: 100vh;
+  min-height: 94vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-position:center;
   background-attachment: fixed;
 }
@@ -23,7 +21,7 @@ body {
   background-color: #fff;
   padding-top: 20px;
   padding: 10px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
@@ -52,7 +50,7 @@ body {
 }
 
 form .user-details .input-box {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: calc(100% / 2 - 20px);
 }
 
@@ -123,7 +121,7 @@ form .input-box span.details {
    margin: 35px 0
  }
 
- form .button input {
+form .button input {
    height: 100%;
    width: 100%;
    border-radius: 5px;
@@ -135,29 +133,29 @@ form .input-box span.details {
    cursor: pointer;
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #71b7e6, #9b59b6);
- }
+}
 
- form .button input:hover {
+form .button input:hover {
   /* transform: scale(0.99); */
   background: linear-gradient(135deg, #54a8e0, #9d3bc4);
 }
 
- @media(max-width: 584px) {
- .container {
+@media(max-width: 584px) {
+.container {
   max-width: 100%;
   }
   form .user-details .input-box {
     margin-bottom: 15px;
     width: 100%;
   }
-  form .category{
+  form .category {
     width: 100%;
   }
-  .content form .user-details{
+  .content form .user-details {
     max-height: 300px;
     overflow-y: scroll;
   }
-  .user-details::-webkit-scrollbar{
+  .user-details::-webkit-scrollbar {
     width: 5px;
   }
 }
