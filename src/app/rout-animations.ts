@@ -39,6 +39,7 @@ import {
       query(':enter, :leave', [
         style({
           position: 'absolute',
+          background:'fixed',
           top: 0,
           left: 0,
           width: '100%'
