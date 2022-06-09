@@ -15,12 +15,24 @@ h1 {
   padding-top: 7px;
 }
 
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
 h3 {
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
   color:rgb(71, 69, 69);
+}
+
+h4 {
+  font-size: xx-large;
 }
 
 nav {
@@ -30,7 +42,7 @@ nav {
   position: -webkit-sticky;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 6vh;
+  height: 50px;
   width: 100%;
 }
 
@@ -59,6 +71,7 @@ nav {
 ::-webkit-scrollbar-track:active {
   background: #333333;
 }
+
 .navigation {
   top:0;
   font-family: 'Raleway', Arial, sans-serif;
