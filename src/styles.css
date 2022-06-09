@@ -1,4 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+body{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);}
+  nav{
+    background-color: rgba(132, 126, 126);
+    z-index: 9999;
+    position: sticky;
+    position: -webkit-sticky;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+    width: 100%;
+  }
+main{
+  position:relative;
+}
 ::-webkit-scrollbar {
   width: 10px;
   height: 15px;

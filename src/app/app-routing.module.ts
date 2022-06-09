@@ -5,9 +5,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HarmonogramComponent } from './harmonogram/harmonogram.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  {path:'form',component:FormComponent},
-  {path:'Harmonogram',component:HarmonogramComponent},
-  { path: '**', redirectTo: '' }
+  {path:'form',component:FormComponent, data: { animation: 'isRight' } },
+  {path:'Harmonogram',component:HarmonogramComponent,data: { animation: 'isLeft' } },
+  { path: '**', redirectTo: ''}
 ];
 
 @NgModule({
