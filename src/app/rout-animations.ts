@@ -33,8 +33,8 @@ import {
           animate('1500ms ease-out', style({ left: '0%' }))
         ]),
       ]),
-    ]),
-    transition('* <=> *', [
+    ]),])
+    /*transition('* <=> *', [
       style({ position: 'relative' }),
       query(':enter, :leave', [
         style({
@@ -61,7 +61,7 @@ import {
     ])
   ]);
 // Basic
-/*
+
 export const fader =
   trigger('routeAnimations', [
     transition('* <=> *', [
