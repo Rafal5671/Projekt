@@ -9,6 +9,7 @@ const routes: Routes = [
   {path:'form',component:FormComponent, data: { animation: 'isRight' } },
   {path:'Harmonogram',component:HarmonogramComponent,data: { animation: 'isRight' } },
   {path:'Zbiorka',component:ZbiorkaComponent,data: { animation: 'isLeft' } },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

@@ -10,7 +10,6 @@ import { /*slider,*//*transformer,*//* fader*/slideInAnimation} from './rout-ani
      //slider,
     //transformer,
     slideInAnimation
-  
   ]
 })
 export class AppComponent {
