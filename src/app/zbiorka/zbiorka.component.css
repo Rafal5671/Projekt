@@ -1,0 +1,46 @@
+body {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+h4 {
+    text-align: left;
+    padding-left: 9%;
+}
+
+.images {
+    display: flex;
+	justify-content: center;
+}
+
+img {
+    width: 300px;
+}
+
+.patrons_img {
+    padding: 8px;
+    height: auto;
+}
+
+.patrons {
+    display:inline;  
+    list-style-type:none;
+    padding: 5px;
+}
