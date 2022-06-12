@@ -3,52 +3,119 @@
     <div class="container">
       <div class="title">Rejestracja</div>
       <div class="content">
-        <form action="#" ngNativeValidate>
+        <form #rejestracja="ngForm" (ngSubmit)="sub(rejestracja.value)">
           <div class="user-details">
             <div class="input-box">
               <span class="details">Imię</span>
-              <input type="text" name="name" na-model="name" placeholder="Podaj imię" required>
-            </div>
+              <input  #name="ngModel" required type="text" name="name" required minlength="2" class="form-control"  placeholder="Podaj imię" ngModel>
+              <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                <div *ngIf="name.errors?.['required']">
+                  Pole imię jest wymagane.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  Imię musi mieć co najmniej 2 znaki.
+                </div>
+              </div>
+              </div>
             <div class="input-box">
               <span class="details">Nazwisko</span>
-              <input type="text" placeholder="Podaj nazwisko" required>
+              <input #lastname="ngModel" required type="text" name="lastname" minlength="2" class="form-control" placeholder="Podaj nazwisko" ngModel>
+              <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)"class="alert">
+                <div *ngIf="lastname.errors?.['required']">
+                  Pole nazwisko jest wymagane.
+                </div>
+                <div *ngIf="lastname.errors?.['minlength']">
+                  Nazwisko musi mieć co najmniej 2 znaki.
+                </div>
+              </div>
             </div>
             <div class="input-box">
-              <span class="details">Data urodzenia</span>
-              <input type="text" placeholder="Data urodzenia (MM/DD/YYYY)"
-                      onfocus="(this.type='date')" onblur="(this.type='text')">
+              <span class="details">Wiek</span>
+              <input #wiek="ngModel" required type="number" min="18" name="wiek" class="form-control" placeholder="Podaj wiek" ngModel>
+              <div *ngIf="wiek.invalid && (wiek.dirty || wiek.touched)"class="alert">
+                <div *ngIf="wiek.errors?.['required']">
+                  Pole wiek jest wymagane.
+                </div>
+                <div *ngIf="wiek.errors?.['min']">
+                  Muszisz być pełnoletni
+                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">E-mail</span>
-              <input type="email" placeholder="Podaj adres e-mail" required>
+              <input #email="ngModel" name="email" required type="email" placeholder="Podaj adres e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ngModel>
+              <div *ngIf="email.invalid && (email.dirty || email.touched)"class="alert">
+              <div *ngIf="email.errors?.['required']">
+                Pole e-mail jest wymagane.
+              </div>
+              <div *ngIf="email.errors?.['pattern']">
+                Nieprawidłowy format.
+              </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Numer telefonu</span>
-              <input type="tel" placeholder="Podaj numer telefonu"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <input #phone="ngModel" name="phone" required type="tel" placeholder="Podaj numer telefonu"  pattern="[0-9]{9}" ngModel>
+              <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"class="alert">
+                <div *ngIf="phone.errors?.['required']">
+                  Pole numer telefonu jest wymagane.
+                </div>
+                <div *ngIf="phone.errors?.['pattern']">
+                  Nieprawidłowy format.
+                </div>
+                </div>
             </div>
             <div class="input-box">
               <span class="details">Kraj</span>
-              <input type="text" placeholder="Kraj" non-fo>
+              <input #kraj="ngModel" name="kraj" type="text" placeholder="Kraj" ngModel>
             </div>
             <div class="input-box">
               <span class="details">Miejscowość</span>
-              <input type="text" placeholder="Podaj miejscowość" required>
+              <input required #miejs="ngModel" name="miejs" type="text" placeholder="Podaj miejscowość" ngModel>
+              <div *ngIf="miejs.invalid && (miejs.dirty ||miejs.touched)"class="alert">
+                <div *ngIf="miejs.errors?.['required']">
+                  Pole miejscowość jest wymagane.
+                </div>
+                </div>
             </div>
             <div class="input-box">
               <span class="details">Kod pocztowy</span>
-              <input type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)" required>
+              <input required #kod="ngModel" name="kod" type="text" pattern="^\d{2}-\d{3}$" placeholder="Kod pocztowy(xx-yyy)" ngModel>
+              <div *ngIf="kod.invalid && (kod.dirty ||kod.touched)"class="alert">
+                <div *ngIf="kod.errors?.['required']">
+                  Pole kod pocztowy jest wymagane.
+                </div>
+                <div *ngIf="kod.errors?.['pattern']">
+                  Nieprawidłowy format.
+                </div>
+                </div>
             </div>
             <div class="input-box">
               <span class="details">Ulica</span>
-              <input type="text" placeholder="Podaj ulicę" required>
+              <input name="ulica" #ulica="ngModel" type="text" placeholder="Podaj ulicę" required ngModel>
+              <div *ngIf="ulica.invalid && (ulica.dirty ||ulica.touched)"class="alert">
+                <div *ngIf="ulica.errors?.['required']">
+                  Pole ulica jest wymagane.
+                </div>
+                </div>
             </div>
             <div class="input-box">
               <span class="details">Numer domu/mieszkania</span>
-              <input type="text" placeholder="Numer domu/mieszkania" required>
+              <input name="nr" #nr="ngModel" type="text" placeholder="Numer domu/mieszkania" required ngModel>
+              <div *ngIf="nr.invalid && (nr.dirty ||nr.touched)"class="alert">
+                <div *ngIf="nr.errors?.['required']">
+                  Pole numer domu/mieszkania jest wymagane.
+                </div>
+                </div>
             </div>
             <div class="input-box">
               <span class="details">Konkurencja</span>
-              <input type="text" list="zawody" placeholder="Zawody" required>
+              <input name="zawody" #zawody="ngModel" type="text" list="zawody" placeholder="Zawody" required ngModel>
+              <div *ngIf="zawody.invalid && (zawody.dirty ||zawody.touched)"class="alert">
+                <div *ngIf="zawody.errors?.['required']">
+                  Pole zawody jest wymagane.
+                </div>
+                </div>
               <datalist id="zawody">
               <option value="biegi">
               <option value="tenis stołowy">
@@ -60,10 +127,10 @@
             </div>
           </div> 
           <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1">
-            <input type="radio" name="gender" id="dot-2">
-            <input type="radio" name="gender" id="dot-3">
-            <input type="radio" name="gender" id="dot-4">
+            <input type="radio" name="gender" #dot="ngModel" id="dot-1" value="Mężczyzna" ngModel>
+            <input type="radio" name="gender" #dot="ngModel" id="dot-2" value="Kobieta"  ngModel>
+            <input type="radio" name="gender" #dot="ngModel" id="dot-3" value="Niebinarna"  ngModel>
+            <input type="radio" name="gender" #dot="ngModel" id="dot-4" value="Wolę nie mówić" ngModel>
             <span class="gender-title">Płeć</span>
             <div class="category">
               <label for="dot-1">
@@ -85,7 +152,7 @@
             </div>
           </div>
           <div class="button">
-            <input type="submit" value="Zarejestruj się">
+            <input type="submit" value="Zarejestruj się" [disabled]="!rejestracja.valid">
           </div>
         </form>
       </div>

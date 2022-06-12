@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FormComponent implements OnInit {
 
   constructor() { }
-
+  sub(rejestracja:any){
+    console.log("Submitted",rejestracja)
+  }
   ngOnInit(): void {
   }
 
