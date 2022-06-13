@@ -51,14 +51,15 @@ form input[type="radio"] {
     display: none;
 }
 
-form .button {
-    height: 45px;
-    margin: 35px 0
+.przy {
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
 }
- 
-form .button input {
-    height: 100%;
-    width: 100%;
+
+.button {
+    height: 45px;
+    margin: 10px ;
     border-radius: 5px;
     border: none;
     color: #fff;
@@ -69,7 +70,7 @@ form .button input {
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
- 
-form .button input:hover {
-   background: linear-gradient(135deg, #54a8e0, #9d3bc4);
+
+.button:hover {
+    background: linear-gradient(135deg, #54a8e0, #9d3bc4);
 }

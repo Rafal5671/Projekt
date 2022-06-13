@@ -14,9 +14,11 @@
             <h3>Zawody organizowane są przez Jana Nowaka i Julię Kowalską przy współpracy z panią prezydent Łodzi Hanną Zdanowską oraz Zatokę Sportu Politechniki Łódzkiej.</h3>
             <h1>Rejestracja</h1>
             <h3>Rejestracja trwa do 20 lipca 2022 roku. Możesz zarejestrować się pod tym adresem.</h3>
-            <!--<div class="button">
-                <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/form" data-hover="Zarejestruj się"><input type="submit" value="Zarejestruj się"></a>
-            </div>-->
+            <div class="przy">
+                <button class="button" [routerLink]="['/form']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >
+                    Weź udział
+                </button>
+            </div> 
             <h1>Mapa</h1>
             <div class="map_div">
                 <div class="map">

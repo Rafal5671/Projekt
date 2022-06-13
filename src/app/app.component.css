@@ -1,15 +1,20 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
   width: 100%;
 }
+
 .back {
   background: linear-gradient(135deg, #777777, #9b59b6);
 }
-ul{
+
+
+ul {
     display:flex;
     list-style:none;
 }
@@ -19,10 +24,16 @@ ul{
       display: block
   }
 }
-.right{
+
+.right {
   float:right;
 }
-ul li{
+
+.mail {
+  color: #ffffff;
+}
+
+ul li {
   margin:10px;
   height:50px;
   width:50px;
@@ -32,21 +43,24 @@ ul li{
   border-radius:50%;
   cursor:pointer;
   position:relative;
-  
 }
-ul li i{
+
+ul li i {
   transition:all 0.3s linear;
 }
-ul li:hover i{
+
+ul li:hover i {
   color:#fff;
   font-size:10px;
 }
-ul li:hover::after{
+
+ul li:hover::after {
   opacity:1;
   transform:scale(0.8);
  
 }
-ul li::after{
+
+ul li::after {
   content:"";
   position:absolute;
   height:inherit;
@@ -55,40 +69,44 @@ ul li::after{
   opacity:0;
   z-index:-1;
   transition:all 0.3s linear;
-  
 }
-ul li:nth-child(1){
+
+ul li:nth-child(1) {
   border:2px solid #ffffff;
   color:#ffffff;
 }
 
-ul li:nth-child(1)::after{
+ul li:nth-child(1)::after {
    background-color:#ffffff;
    color:#ffffff;
 }
-ul li:nth-child(2){
+
+ul li:nth-child(2) {
   border:2px solid #ffffff;
   color:#ffffff;
 }
 
-ul li:nth-child(2)::after{
+ul li:nth-child(2)::after {
    background-color:#ffffff;
    color:#ffffff;
 }
-ul li:nth-child(3){
-  border:2px solid #ffffff;
-  color:#ffffff;
-}
-ul li:nth-child(3)::after{
-   background-color:#ffffff;
-   color:#ffffff;
-}
-ul li:nth-child(4){
+
+ul li:nth-child(3) {
   border:2px solid #ffffff;
   color:#ffffff;
 }
 
-ul li:nth-child(4)::after{
+ul li:nth-child(3)::after {
+   background-color:#ffffff;
+   color:#ffffff;
+}
+
+ul li:nth-child(4) {
+  border:2px solid #ffffff;
+  color:#ffffff;
+}
+
+ul li:nth-child(4)::after {
    background-color:#ffffff;
    color:#dd4b39;
 }

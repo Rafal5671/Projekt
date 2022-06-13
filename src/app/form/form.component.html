@@ -16,7 +16,7 @@
                   Imię musi mieć co najmniej 2 znaki.
                 </div>
               </div>
-              </div>
+            </div>
             <div class="input-box">
               <span class="details">Nazwisko</span>
               <input #lastname="ngModel" required type="text" name="lastname" minlength="2" class="form-control" placeholder="Podaj nazwisko" ngModel>
@@ -31,7 +31,7 @@
             </div>
             <div class="input-box">
               <span class="details">Wiek</span>
-              <input #wiek="ngModel" required type="number" min="18" name="wiek" class="form-control" placeholder="Podaj wiek" ngModel>
+              <input #wiek="ngModel" required type="number" min="18" max="100" name="wiek" class="form-control" placeholder="Podaj wiek" ngModel>
               <div *ngIf="wiek.invalid && (wiek.dirty || wiek.touched)"class="alert">
                 <div *ngIf="wiek.errors?.['required']">
                   Pole wiek jest wymagane.
@@ -63,7 +63,7 @@
                 <div *ngIf="phone.errors?.['pattern']">
                   Nieprawidłowy format.
                 </div>
-                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Kraj</span>
@@ -76,7 +76,7 @@
                 <div *ngIf="miejs.errors?.['required']">
                   Pole miejscowość jest wymagane.
                 </div>
-                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Kod pocztowy</span>
@@ -88,7 +88,7 @@
                 <div *ngIf="kod.errors?.['pattern']">
                   Nieprawidłowy format.
                 </div>
-                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Ulica</span>
@@ -97,7 +97,7 @@
                 <div *ngIf="ulica.errors?.['required']">
                   Pole ulica jest wymagane.
                 </div>
-                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Numer domu/mieszkania</span>
@@ -106,7 +106,7 @@
                 <div *ngIf="nr.errors?.['required']">
                   Pole numer domu/mieszkania jest wymagane.
                 </div>
-                </div>
+              </div>
             </div>
             <div class="input-box">
               <span class="details">Konkurencja</span>
@@ -115,14 +115,17 @@
                 <div *ngIf="zawody.errors?.['required']">
                   Pole zawody jest wymagane.
                 </div>
-                </div>
+              </div>
               <datalist id="zawody">
               <option value="biegi">
-              <option value="tenis stołowy">
-              <option value="koszykówka">
+              <option value="pływanie">
+              <option value="ścianka wspinaczkowa">
               <option value="piłka nożna">
               <option value="siatkówka">
-              <option value="pływanie">
+              <option value="koszykówka">
+              <option value="tenis ziemny">
+              <option value="badminton">
+              <option value="tenis stołowy">
               </datalist>
             </div>
           </div> 
