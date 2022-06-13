@@ -47,11 +47,11 @@ ul li {
 
 ul li i {
   transition:all 0.3s linear;
+  color: #fff;
 }
 
 ul li:hover i {
   color:#fff;
-  font-size:10px;
 }
 
 ul li:hover::after {
@@ -100,13 +100,12 @@ ul li:nth-child(3)::after {
    background-color:#ffffff;
    color:#ffffff;
 }
-
-ul li:nth-child(4) {
-  border:2px solid #ffffff;
-  color:#ffffff;
-}
-
-ul li:nth-child(4)::after {
-   background-color:#ffffff;
-   color:#dd4b39;
+.mat-icon-button{
+   position: fixed;
+	 float: right;
+	 cursor: pointer;
+	 right: 14px;
+	 bottom: 14px;
+	 z-index: 100;
+	 opacity: 0.7;
 }
