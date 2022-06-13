@@ -24,7 +24,7 @@
   font-family: 'Poppins',sans-serif;
 }
 
-body {
+.main {
   min-height: 94vh;
   display: flex;
   justify-content: center;
