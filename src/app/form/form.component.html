@@ -110,7 +110,7 @@
             </div>
             <div class="input-box">
               <span class="details">Konkurencja</span>
-              <input name="zawody" #zawody="ngModel" type="text" list="zawody" placeholder="Zawody" required ngModel>
+              <input onfocus="this.value=''" onchange="this.blur();" name="zawody" #zawody="ngModel" type="text" list="zawody" placeholder="Zawody" required ngModel>
               <div *ngIf="zawody.invalid && (zawody.dirty ||zawody.touched)"class="alert">
                 <div *ngIf="zawody.errors?.['required']">
                   Pole zawody jest wymagane.
