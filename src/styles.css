@@ -13,6 +13,7 @@ main {
 h1 {
   text-align: center;
   padding-top: 7px;
+  font-family: 'Poppins',sans-serif;
 }
 
 h2 {
@@ -21,6 +22,7 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  font-family: 'Poppins',sans-serif;
 }
 
 h3 {
@@ -28,11 +30,13 @@ h3 {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
+  font-family: 'Poppins',sans-serif;
   color:rgb(71, 69, 69);
 }
 
 h4 {
   font-size: xx-large;
+  font-family: 'Poppins',sans-serif;
 }
 
 nav {
@@ -125,4 +129,4 @@ nav {
   transform: translateY(-100%);
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Poppins',sans-serif; }
