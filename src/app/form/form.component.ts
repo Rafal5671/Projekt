@@ -1,17 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+  export class FormComponent{
 
-  constructor() { }
-  sub(rejestracja:any){
-    console.log("Submitted",rejestracja)
+    constructor(private http:HttpClient) { }
+    sub(data:any){
+      this.http.post("http://localhost:3000/zawodnicy",data)
+      .subscribe((result)=>{
+        console.warn("result",result)
+      }
+      )
+      console.log("Submitted",data)
+    }
   }
-  ngOnInit(): void {
-  }
-
-}

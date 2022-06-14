@@ -1,0 +1,19 @@
+{
+  "zawodnicy": [
+    {
+      "name": "faaf",
+      "lastname": "fafaf",
+      "wiek": 25,
+      "email": "rafal3006rok@interia.pl",
+      "phone": "111111111",
+      "kraj": "polska",
+      "miejs": "rozp",
+      "kod": "11-111",
+      "ulica": "kurcz",
+      "nr": "4",
+      "zawody": "tenis stołowy",
+      "gender": "Mężczyzna",
+      "id": 1
+    }
+  ]
+}
