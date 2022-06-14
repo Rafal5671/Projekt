@@ -141,3 +141,7 @@ body { margin: 0; font-family: 'Poppins',sans-serif; }
     width: fit-content;
   }
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }

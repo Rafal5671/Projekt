@@ -48,3 +48,7 @@ img {
     list-style-type:none;
     padding: 5px;
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
