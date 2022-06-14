@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
     constructor(private http:HttpClient) { }
     sub(data:any){
-      this.http.post("http://localhost:3000/zawodnicy",data)
+      this.http.post("http://localhost:3000/zawodnicy",data)/* komenda dla servera json-server --watch db.json*/
       .subscribe((result)=>{
         console.warn("result",result)
       }
