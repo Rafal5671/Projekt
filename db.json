@@ -1,17 +1,17 @@
 {
   "zawodnicy": [
     {
-      "name": "faaf",
-      "lastname": "fafaf",
-      "wiek": 25,
-      "email": "rafal3006rok@interia.pl",
-      "phone": "111111111",
-      "kraj": "polska",
-      "miejs": "rozp",
+      "name": "Test",
+      "lastname": "Test",
+      "wiek": 18,
+      "email": "test@test.com",
+      "phone": "999999999",
+      "kraj": "Polska",
+      "miejs": "Test",
       "kod": "11-111",
-      "ulica": "kurcz",
+      "ulica": "testowa",
       "nr": "4",
-      "zawody": "tenis stołowy",
+      "zawody": "biegi",
       "gender": "Mężczyzna",
       "id": 1
     }
