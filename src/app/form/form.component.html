@@ -31,13 +31,16 @@
             </div>
             <div class="input-box">
               <span class="details">Wiek</span>
-              <input #wiek="ngModel" required type="number" min="18" max="100" name="wiek" class="form-control" placeholder="Podaj wiek" ngModel>
+              <input #wiek="ngModel" required type="number" min="18" max="99" name="wiek" class="form-control" placeholder="Podaj wiek" ngModel>
               <div *ngIf="wiek.invalid && (wiek.dirty || wiek.touched)"class="alert">
                 <div *ngIf="wiek.errors?.['required']">
                   Pole wiek jest wymagane.
                 </div>
                 <div *ngIf="wiek.errors?.['min']">
-                  Muszisz być pełnoletni
+                  Muszisz być pełnoletni.
+                </div>
+                <div *ngIf="wiek.errors?.['max']">
+                  Podaj prawidłowy wiek.
                 </div>
               </div>
             </div>
